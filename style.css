@@ -1,0 +1,54 @@
+body {
+  background-color: #ffe6eb;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 20px;
+  text-align: center;
+  width: 300px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.2);
+}
+
+.photo {
+  width: 100%;
+  border-radius: 15px;
+  margin: 15px 0;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 10px;
+  border: none;
+  border-radius: 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:first-child {
+  background-color: #ff4d6d;
+  color: white;
+}
+
+button:last-child {
+  background-color: #ccc;
+}
+
+/* Floating hearts */
+body::before {
+  content: "💖 💕 💘 💗 💓";
+  font-size: 30px;
+  position: fixed;
+  animation: float 6s infinite linear;
+}
+
+@keyframes float {
+  from { top: 100%; }
+  to { top: -10%; }
+}
